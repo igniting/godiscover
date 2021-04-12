@@ -1,4 +1,4 @@
-module godiscover
+module github.com/igniting/godiscover
 
 go 1.16
 

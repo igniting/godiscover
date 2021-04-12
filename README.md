@@ -3,12 +3,22 @@ godiscover
 
 Tool for discovering go code.
 
-Build: Run `make build`
+Given a go package, godiscover tries to find "most popular" github repos using
+that package. It uses godoc API for fetching package usages and then uses
+github API for fetching stars of those repos.
 
-Usage: bin/godiscover <package_name> <github_access_token>
+# Pre-requisites
 
 You can generate Github Access Token at https://github.com/settings/tokens.
 You need to generate a "Personal Access Token".
+
+# Build
+
+Run `make build`
+
+# Usage
+
+`bin/godiscover <package_name> <github_access_token>`
 
 Example usage:
 ```
