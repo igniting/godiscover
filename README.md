@@ -18,7 +18,7 @@ Run `make build`
 
 # Usage
 
-`bin/godiscover <package_name> <github_access_token>`
+`bin/godiscover -pkg=<package_name> -token=<github_access_token>`
 
 Example usage:
 ```
